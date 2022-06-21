@@ -29,11 +29,7 @@ function calculate(num1, num2, fn) {
 }
 
 //examples
-console.log(add(one, two));
-console.log(subtract(one, two));
-console.log(divide(one, two));
-console.log(multiply(one, two));
-console.log(calculate(one, two, add));
+
 
 function calculator(operator) {
     //first number
@@ -77,3 +73,10 @@ function calculator(operator) {
     alert(ans);
 }
 calculator();
+
+
+console.log(add(one, two));
+console.log(subtract(one, two));
+console.log(divide(one, two));
+console.log(multiply(one, two));
+console.log(calculate(one, two, add));
