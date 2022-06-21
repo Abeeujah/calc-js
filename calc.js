@@ -29,24 +29,40 @@ function calculate(num1, num2, fn) {
 }
 
 //examples
+function exorcism() {
+    let clap = true;
+    while (clap) {
+        var one = parseInt(prompt("Enter first number: "));
+        if (Number.isInteger(one)) {
+            break;
+        } else {
+            continue;
+        }
+    }
 
+    let house = true;
+    while (house) {
+        var operator = prompt("Enter an operator of your choice(+, -, *, /, %): ");
+        if ((operator === '+') || (operator === '-') || (operator === '*') || (operator === '/') || (operator === '%')) {
+            break;
+        }else{
+            continue;
+        }
+    }
+    
 
-function calculator(operator) {
-    //first number
-    let one = prompt("Enter the first number: ");
-    one = parseInt(one, 10);
+    let nap = true;
+    while (nap) {
+        var two = parseInt(prompt("Enter second number: "));
+        if (Number.isInteger(two)) {
+            break;
+        } else {
+            continue;
+        }
+    }
 
-    //operator
-    operator = prompt("Enter an operator of your choice(+, -, *, /, %): ");
+    var ans;
 
-    //second number
-    let two = prompt("Enter your second number: ");
-    two = parseInt(two, 10);
-
-    //answer variable
-    let ans;
-
-    //logic
     switch (operator) {
         case "+":
             ans = add(one, two);
@@ -70,9 +86,11 @@ function calculator(operator) {
         default:
             break;
     }
+
     alert(ans);
+
 }
-calculator();
+exorcism();
 
 
 console.log(add(one, two));
