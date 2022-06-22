@@ -30,9 +30,12 @@ function calculate(num1, num2, fn) {
 
 //examples
 function exorcism() {
+    let one;
+    let two;
+    let operator;
     let clap = true;
     while (clap) {
-        var one = parseInt(prompt("Enter first number: "));
+        one = parseInt(prompt("Enter first number: "));
         if (Number.isInteger(one)) {
             break;
         } else {
@@ -42,7 +45,7 @@ function exorcism() {
 
     let house = true;
     while (house) {
-        var operator = prompt("Enter an operator of your choice(+, -, *, /, %): ");
+        operator = prompt("Enter an operator of your choice(+, -, *, /, %): ");
         if ((operator === '+') || (operator === '-') || (operator === '*') || (operator === '/') || (operator === '%')) {
             break;
         }else{
@@ -53,15 +56,13 @@ function exorcism() {
 
     let nap = true;
     while (nap) {
-        var two = parseInt(prompt("Enter second number: "));
+        two = parseInt(prompt("Enter second number: "));
         if (Number.isInteger(two)) {
             break;
         } else {
             continue;
         }
     }
-
-    var ans;
 
     switch (operator) {
         case "+":
@@ -91,10 +92,3 @@ function exorcism() {
 
 }
 exorcism();
-
-
-console.log(add(one, two));
-console.log(subtract(one, two));
-console.log(divide(one, two));
-console.log(multiply(one, two));
-console.log(calculate(one, two, add));
